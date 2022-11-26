@@ -1,0 +1,186 @@
+.publications {
+  .container {
+    padding: 30px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+  background-color: #f5f5fa;
+  &__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    /* identical to box height */
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    /* Active / Regular */
+
+    color: #24a3ff;
+
+    display: inline-block;
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    /* Hero / Mobile */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.23;
+
+    @media screen and (min-width: 768px) {
+      font-size: 38px;
+      line-height: 46px;
+    }
+
+    /* Gradient / Red Text */
+
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      width: 270px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 480px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+
+  .card {
+    &__image {
+      @media screen and (min-width: 1440px) {
+        width: 480px;
+      }
+    }
+
+    &__textContainer {
+      padding: 30px 30px 30px;
+    }
+
+    &__title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+
+      /* Active / Regular */
+
+      color: #24a3ff;
+
+      margin-bottom: 15px;
+
+      @media screen and (min-width: 768px) {
+        max-width: 220px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        max-width: 360px;
+      }
+    }
+
+    &__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 1.25;
+      /* identical to box height */
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      /* Grey / Text */
+
+      color: #b3b3ba;
+
+      margin-bottom: 34px;
+
+      position: relative;
+    }
+
+    &__text::after {
+      position: absolute;
+      content: '';
+
+      display: block;
+      margin: 0 auto;
+
+      height: 4px;
+      width: 255px;
+
+      @media screen and (min-width: 768px) {
+        width: 135px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        width: 360px;
+      }
+
+      top: 30px;
+
+      background-color: #e6e6f0;
+    }
+
+    &__textTwo {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.57;
+      /* or 157% */
+
+      /* Basic/Black */
+
+      color: #000000;
+      text-transform: none;
+
+      @media screen and (min-width: 768px) {
+        max-width: 220px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        max-width: 360px;
+      }
+    }
+  }
+}

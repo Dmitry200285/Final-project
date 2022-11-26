@@ -1,0 +1,157 @@
+.team {
+  padding: 30px;
+  padding-bottom: 46px;
+  // margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+
+  &__image {
+    @media screen and (min-width: 768px) {
+      width: 648px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 400px;
+    }
+  }
+
+  &__container {
+    padding: 30px 30px 30px 30px;
+  }
+
+  &__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #24a3ff;
+
+    display: inline-block;
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    &.like__title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.23;
+
+      /* Gradient / Red Text */
+
+      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 38px;
+        line-height: 46px;
+      }
+    }
+
+    &.one {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.25;
+
+      margin-bottom: 6px;
+
+      color: #b3b3ba;
+
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &.two {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.57;
+
+      color: #b3b3ba;
+
+      @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .circle {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    /* content: ""; */
+
+    background-color: #24a3ff;
+    position: absolute;
+
+    bottom: 0;
+    left: 149px;
+
+    @media screen and (min-width: 768px) {
+      left: 345px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      left: 681px;
+    }
+
+    &.two {
+      opacity: 0.2;
+      left: 180px;
+      @media screen and (min-width: 768px) {
+        left: 376px;
+      }
+      @media screen and (min-width: 1440px) {
+        left: 713px;
+      }
+    }
+
+    &.three {
+      opacity: 0.2;
+      left: 211px;
+      @media screen and (min-width: 768px) {
+        left: 407px;
+      }
+      @media screen and (min-width: 1440px) {
+        left: 743px;
+      }
+    }
+  }
+}
+
+.card {
+  border-radius: 12px;
+  background-color: #f5f5fa;
+
+  @media screen and (min-width: 768px) {
+    width: 648px;
+
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    width: 1320px;
+  }
+}
